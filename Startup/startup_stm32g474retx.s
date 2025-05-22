@@ -60,7 +60,10 @@ defined in linker script */
 	.type	Reset_Handler, %function
 Reset_Handler:
   ldr   r0, =_estack
-  mov   sp, r0          /* set stack pointer */
+  mov   sp, r0                      /* Set stack pointer */
+  bl    SystemInit                  /* CMSIS: set clock and FPU config */
+  bl    main                        /* Enter your main() function */
+  b     .                           /* Hang forever if main returns */
 
 /* Call the clock system initialization function.*/
     bl  SystemInit
