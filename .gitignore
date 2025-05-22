@@ -1,0 +1,45 @@
+# === Build outputs ===
+cmake-build-*/
+
+# === CMake generated files ===
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+*.cmake
+
+# === IDE generated files ===
+.idea/
+.project
+.cproject
+*.launch
+*.user
+*.sublime*
+
+# === STM32CubeMX project files ===
+*.mxproject
+
+# === Binary outputs ===
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.log
+
+# === Object files ===
+*.o
+*.obj
+*.d
+
+# === Temporary files ===
+*.swp
+*.swo
+*.swn
+*.bak
+*~
+
+# === Other cache/debug artifacts ===
+*.log
+*.dep
+*.out
