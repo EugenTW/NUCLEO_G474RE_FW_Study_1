@@ -3,7 +3,7 @@
 
 class AppLed {
 public:
-    AppLed();  // 初始化 GPIO
+    AppLed();
     void on();
     void off();
 };
